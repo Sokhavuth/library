@@ -7,43 +7,31 @@
   </head>
   <body>
    <div id="site">
-     <div id="site-title">RENTAL BICYCLE</div>
+     <div id="site-title">LIBRARY</div>
      <nav id="menu">
-      <a onclick="Bicycle.showBicycle('table')">Bicycle</a> 
-      <a onclick="Bicycle.showCustomer()">Customer</a>
-      <a onclick="Bicycle.showRegister()">Register</a>
-      <a onclick="Bicycle.showTopRental()">Top Rental</a>
+      <a onclick="lib.showBooks()">Books</a> 
+      <a onclick="lib.showVisitors()">Visitors</a>
+      <a onclick="lib.showCards()">Cards</a>
+      <a onclick="lib.showStatitics()">Statitics</a>
      </nav>
 
      <div id="content">
-      <form id="bikeform" onsubmit="return Bicycle.bicycleForm('bikeform')">
-        <a>Brand:</a><input name="fbrand" type="text" />
-        <a>Country:</a><input name="fcountry" type="text" />
+      <form id="bookform" onsubmit="return lib.bookForm()">
+        <a>Title:</a><input name="ftitle" type="text" />
+        <a>Author:</a><input name="fauthor" type="text" />
         <a>Year:</a><input name="fyear" type="text" />
+        <a>Publisher:</a><input name="fpublisher" type="text" />
+        <a>Pages:</a><input name="fpages" type="text" />
         <a>Amount:</a><input name="famount" type="text" />
-        <a>Price:</a><input name="fprice" type="text" />
-        <a></a><input type="submit" />
-      </form>
-
-      <form id="custform" onsubmit="return Bicycle.customerForm()">
-        <a>Name:</a><input id="fname" name="fname" type="text" />
-        <a>Phone:</a><input id="fphone" name="fphone" type="text" />
-        <a></a><input type="submit" />
-      </form>
-
-      <form id="regisform" onsubmit="return Bicycle.registerForm()">
-        <a>Bicycles: </a><select id="bikelist"></select>
-        <a>Customers: </a><select id="customerlist"></select>
         <a></a><input type="submit" />
       </form>
 
       <div id="table"></div>
-    </div>
+    </div><!--content-->
 
     <script>
-      var myBicycle = new Bicycle();
-      Bicycle.showBicycle();
+      lib.showBooks();
     </script>
-   </div>
+   </div><!--site-->
   </body>
 </html>

@@ -3,9 +3,12 @@
   background:lavender;
   margin:30px auto;
   padding:20px;
+  font-size:14px;
 }
 #site-title{
   letter-spacing: 2px;
+  font-size:20px;
+  font-weight:bold;
 }
 #menu{
   background:black;
@@ -16,31 +19,11 @@
   text-decoration:none;
   color:white;
   display:inline-block;
+  font-size:18px;
 }
 #menu a:hover{
   color:grey;
   cursor:pointer;
-}
-
-#bikeform,#custform,#regisform{
-  visibility:hidden;
-  width:40%;
-  margin:0 auto;
-  displaY:grid;
-  grid-template-columns:20% 80%;
-  grid-gap:10px 5px;
-  background:grey;
-  padding:10px 15px 10px 10px;
-  position:absolute;
-  top:30px;
-  left:50%;
-  transform:translateX(-50%);
-}
-#bikeform a,#custform a,#regisform a{
-  text-align:right;
-}
-#regisform{
-  grid-template-columns:30% 70%;
 }
 #content{
   position:relative;
@@ -50,6 +33,33 @@
 }
 .add-data input{
   float:right;
+}
+#bookkey{
+  width:15%;
+}
+#search{
+  float:right;
+  text-align:right;
+}
+#search #query{
+  width:56%;
+}
+#bookform{
+  visibility:hidden;
+  width:40%;
+  margin:0 auto;
+  displaY:grid;
+  grid-template-columns:25% 75%;
+  grid-gap:10px 5px;
+  background:grey;
+  padding:10px 15px 10px 10px;
+  position:absolute;
+  top:30px;
+  left:50%;
+  transform:translateX(-50%);
+}
+#bookform a{
+  text-align:right;
 }
 table {
   border-collapse: collapse;
@@ -80,10 +90,4 @@ td.option .delete:hover{
 td.option img:hover{
   opacity:.5;
   cursor:pointer;
-}
-#bikekey,#custkey,#regiskey{
-  width:15%;
-}
-#search{
-  float:right;
 }
