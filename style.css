@@ -1,0 +1,89 @@
+#site{
+  width:700px;
+  background:lavender;
+  margin:30px auto;
+  padding:20px;
+}
+#site-title{
+  letter-spacing: 2px;
+}
+#menu{
+  background:black;
+  margin:20px 0;
+}
+#menu a{
+  padding:10px;
+  text-decoration:none;
+  color:white;
+  display:inline-block;
+}
+#menu a:hover{
+  color:grey;
+  cursor:pointer;
+}
+
+#bikeform,#custform,#regisform{
+  visibility:hidden;
+  width:40%;
+  margin:0 auto;
+  displaY:grid;
+  grid-template-columns:20% 80%;
+  grid-gap:10px 5px;
+  background:grey;
+  padding:10px 15px 10px 10px;
+  position:absolute;
+  top:30px;
+  left:50%;
+  transform:translateX(-50%);
+}
+#bikeform a,#custform a,#regisform a{
+  text-align:right;
+}
+#regisform{
+  grid-template-columns:30% 70%;
+}
+#content{
+  position:relative;
+}
+.add-data{
+  margin-bottom:20px;
+}
+.add-data input{
+  float:right;
+}
+table {
+  border-collapse: collapse;
+  width:100%;
+  margin-top:20px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  height: 40px;
+}
+td {
+  padding: 5px;
+  text-align: left;
+}
+td.option{
+  text-align:center;
+}
+td.option .edit:hover{
+  cursor:pointer;
+  color:rgba(6, 148, 6, 0.753);
+}
+td.option .delete:hover{
+  cursor:pointer;
+  color:red;
+}
+td.option img:hover{
+  opacity:.5;
+  cursor:pointer;
+}
+#bikekey,#custkey,#regiskey{
+  width:15%;
+}
+#search{
+  float:right;
+}
