@@ -12,7 +12,7 @@
       <a onclick="lib.showBooks()">Books</a> 
       <a onclick="lib.showVisitors()">Visitors</a>
       <a onclick="lib.showCards()">Cards</a>
-      <a onclick="lib.showStatitics()">Statitics</a>
+      <a onclick="lib.showStatistics()">Statitics</a>
      </nav>
 
      <div id="content">
@@ -26,6 +26,18 @@
         <a></a><input type="submit" />
       </form>
 
+      <form id="visitorform" onsubmit="return lib.visitorForm()">
+        <a>Name:</a><input id="fname" name="fname" type="text" />
+        <a>Phone:</a><input id="fphone" name="fphone" type="text" />
+        <a></a><input type="submit" />
+      </form>
+
+      <form id="cardform" onsubmit="return lib.cardForm()">
+        <a>Books: </a><select id="booklist"></select>
+        <a>Visitors: </a><select id="visitorlist"></select>
+        <a></a><input type="submit" />
+      </form>
+    
       <div id="table"></div>
     </div><!--content-->
 

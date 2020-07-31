@@ -34,7 +34,7 @@
 .add-data input{
   float:right;
 }
-#bookkey{
+#bookkey,#visitorkey,#cardkey{
   width:15%;
 }
 #search{
@@ -44,7 +44,7 @@
 #search #query{
   width:56%;
 }
-#bookform{
+#bookform,#visitorform,#cardform{
   visibility:hidden;
   width:40%;
   margin:0 auto;
@@ -58,7 +58,7 @@
   left:50%;
   transform:translateX(-50%);
 }
-#bookform a{
+#bookform a,#visitorform a,#cardform{
   text-align:right;
 }
 table {
