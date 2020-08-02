@@ -152,7 +152,7 @@ class Library{
 
     for(var i=0; i<this.bookDB.length; i++){
       for(var j in this.bookDB[i]){
-        var str = this.bookDB[i][j];
+        var str = this.bookDB[i][j].toString();
         var result = str.indexOf(query);
         if(result != -1)
           arrSearch.push(i);
@@ -310,7 +310,7 @@ class Library{
 
     for(var i=0; i<this.visitorDB.length; i++){
       for(var j in this.visitorDB[i]){
-        var str = this.visitorDB[i][j];
+        var str = this.visitorDB[i][j].toString();
         var result = str.indexOf(query);
         if(result != -1)
           arrSearch.push(i);
@@ -545,7 +545,7 @@ class Library{
 
     for(var i=0; i<this.cardDB.length; i++){
       for(var j in this.cardDB[i]){
-        var str = this.cardDB[i][j];
+        var str = this.cardDB[i][j].toString();
         var result = str.indexOf(query);
         if(result != -1)
           arrSearch.push(i);
