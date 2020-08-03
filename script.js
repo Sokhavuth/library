@@ -185,7 +185,8 @@ class Library{
 
       html += "</table>";
     }
-    $("#table").html(html);
+    if(query !== "")
+      $("#table").html(html);
   }
 /////////////////////////////////////////////////////////////////VISITORS/////////////////////////////////////////////////////////
   showVisitors(){
@@ -343,7 +344,8 @@ class Library{
 
       html += "</table>";
     }
-    $("#table").html(html);
+    if(query !== "")
+      $("#table").html(html);
   }
 /////////////////////////////////////////////////////////////CARD///////////////////////////////////////////////////////////////////////////
   showCards(){
@@ -547,7 +549,7 @@ class Library{
       for(var j in this.cardDB[i]){
         var str = this.cardDB[i][j].toString();
         var result = str.indexOf(query);
-        if(result != -1)
+        if(result !== -1)
           arrSearch.push(i);
       }
     }
@@ -578,7 +580,8 @@ class Library{
 
       html += "</table>";
     }
-    $("#table").html(html);
+    if(query !== "")
+      $("#table").html(html);
   }
 /////////////////////////////////////////////////////////////////TOP RENTAL//////////////////////////////////////////////////////////
   showStatistics(){
