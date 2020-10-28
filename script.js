@@ -410,6 +410,7 @@ class Library{
       var amount = books[i].amount;
       if(amount > 0)
         $('#booklist').append(`<option value="${i}">${title}</option>`);
+
     }
 
     for(var i=0; i<visitors.length; i++){
@@ -430,7 +431,7 @@ class Library{
   }
 
   cardForm(){
-    var bookIndex = $("#booklist option:selected").index();
+    var bookIndex = $("#booklist option:selected").val();
     var bookTitle = $('#booklist option:selected').text();
     var visitorName = $('#visitorlist option:selected').text();
 
